@@ -26,6 +26,7 @@ Usage:
   fluxflow [command]
 
 Available Commands:
+	enable			Enable f.lux if disabled
   completion  Output shell completion code for tab completion
   darkroom    Set f.lux to darkroom mode
   hour        Disable f.lux for 1 hour

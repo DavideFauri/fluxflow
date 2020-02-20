@@ -4,6 +4,9 @@ package submenu
 type Item string
 
 const (
+	// This option is not needed
+	None Item = ""
+
 	// Darkroom preserves night vision.
 	Darkroom Item = "Darkroom"
 	// Movie sets movie mode for 2.5 hours.

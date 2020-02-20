@@ -20,6 +20,16 @@ func success(cmd *cobra.Command, args []string) {
 	fmt.Println("Updated f.lux settings.")
 }
 
+var enabmeCmd = &cobra.Command{
+	Use:	 "enable",
+	Short: "Enable f.lux if disabled",
+	RunE: func(cmd *cobra.Command, args[]string) error{
+		return pkg.Run(menu.Enable, submenu.None)
+	},
+	PostRun: success,
+}
+
+
 var hourCmd = &cobra.Command{
 	Use:   "hour",
 	Short: "Disable f.lux for 1 hour",

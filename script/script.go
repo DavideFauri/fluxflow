@@ -14,41 +14,26 @@ property subItem : "%s"
 
 if mainItem is "Disable" and subItem is "for this app" then set subItem to 3
 
-tell application "System Events"
-    tell application process "Flux"
-        tell menu bar 1
-            tell menu bar item 1
-                try
-                    with timeout of 0.1 seconds
-                        perform action "AXPress"
-                    end timeout
-                end try
-            end tell
-        end tell
-    end tell
+do shell script "open -g /Applications/Flux.app"
+
+tell application "System Events" to tell process "Flux"
+    try
+        click menu bar item 1 of menu bar 2
+    end try
 end tell
 
 do shell script "killall 'System Events'"
 
-tell application "System Events"
-    tell application process "Flux"
-        tell menu bar 1
-            tell menu bar item 1
-                tell menu 1
-                    tell menu item mainItem
-                        perform action "AXPress"
-                    end tell
-                    if menu 1 of menu item mainItem exists then
-                        tell menu 1 of menu item mainItem
-                            tell menu item subItem
-                                perform action "AXPress"
-                            end tell
-                        end tell
-                    end if
-                end tell
-            end tell
+tell application "System Events" to tell process "Flux"
+    tell menu 1 of menu bar item 1 of menu bar 2
+        click menu item mainItem
+        tell menu item mainItem
+            if menu 1 exists then
+                click menu item subItem of menu 1
+            end if
         end tell
-        if mainItem is "Preferences..." then set frontmost to true
     end tell
+    if mainItem is "Preferences..." then set frontmost to true
 end tell
+
 `
