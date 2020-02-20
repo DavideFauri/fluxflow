@@ -18,7 +18,9 @@ do shell script "open -g /Applications/Flux.app"
 
 tell application "System Events" to tell process "Flux"
     try
-        click menu bar item 1 of menu bar 2
+        with timeout of 0.1 seconds
+            click menu bar item 1 of menu bar 2
+        end timeout
     end try
 end tell
 
