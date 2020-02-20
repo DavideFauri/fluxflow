@@ -16,11 +16,13 @@ if mainItem is "Disable" and subItem is "for this app" then set subItem to 3
 
 do shell script "open -g /Applications/Flux.app"
 
-tell application "System Events" to tell process "Flux"
-    try
-        click menu bar item 1 of menu bar 2
-    end try
-end tell
+ignoring application responses
+    tell application "System Events" to tell process "Flux"
+        try
+            click menu bar item 1 of menu bar 2
+        end try
+    end tell
+end ignoring
 
 do shell script "killall 'System Events'"
 
