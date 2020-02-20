@@ -10,6 +10,7 @@ import (
 )
 
 func init() {
+	RootCmd.AddCommand(enableCmd)
 	RootCmd.AddCommand(hourCmd)
 	RootCmd.AddCommand(sunriseCmd)
 	RootCmd.AddCommand(movieCmd)
@@ -20,7 +21,7 @@ func success(cmd *cobra.Command, args []string) {
 	fmt.Println("Updated f.lux settings.")
 }
 
-var enabmeCmd = &cobra.Command{
+var enableCmd = &cobra.Command{
 	Use:	 "enable",
 	Short: "Enable f.lux if disabled",
 	RunE: func(cmd *cobra.Command, args[]string) error{
