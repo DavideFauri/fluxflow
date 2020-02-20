@@ -1,4 +1,4 @@
-# FluxFlow [![Build Status](https://travis-ci.org/DavideFauri/fluxflow.svg?branch=master)](https://travis-ci.org/DavideFauri/fluxflow)
+# FluxFlow [![Build Status](https://travis-ci.com/DavideFauri/fluxflow.svg?branch=master)](https://travis-ci.com/DavideFauri/fluxflow)
 
 A command line tool to adjust [f.lux](https://justgetflux.com/) settings (on OS X).
 Original developer: [tonglil](github.com/tonglil)
