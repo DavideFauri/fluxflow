@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/tonglil/fluxflow/menu"
-	"github.com/tonglil/fluxflow/menu/submenu"
-	"github.com/tonglil/fluxflow/pkg"
+	"github.com/DavideFauri/fluxflow/menu"
+	"github.com/DavideFauri/fluxflow/menu/submenu"
+	"github.com/DavideFauri/fluxflow/pkg"
 )
 
 func init() {

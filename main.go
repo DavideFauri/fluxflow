@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/tonglil/fluxflow/cmd"
-	"github.com/tonglil/fluxflow/versioning"
+	"github.com/DavideFauri/fluxflow/cmd"
+	"github.com/DavideFauri/fluxflow/versioning"
 )
 
 // Deliberately uninitialized, see versioning package.

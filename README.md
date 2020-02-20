@@ -1,6 +1,7 @@
-# FluxFlow [![Build Status](https://travis-ci.org/tonglil/fluxflow.svg?branch=master)](https://travis-ci.org/tonglil/fluxflow)
+# FluxFlow [![Build Status](https://travis-ci.org/DavideFauri/fluxflow.svg?branch=master)](https://travis-ci.org/DavideFauri/fluxflow)
 
 A command line tool to adjust [f.lux](https://justgetflux.com/) settings (on OS X).
+Original developer: [tonglil](github.com/tonglil)
 
 ## Installation
 
@@ -9,10 +10,10 @@ Get the binary for OS X from the latest [release].
 Or use `go get`:
 
 ```
-go get -u github.com/tonglil/fluxflow
+go get -u github.com/DavideFauri/fluxflow
 ```
 
-[release]: https://github.com/tonglil/fluxflow/releases
+[release]: https://github.com/DavideFauri/fluxflow/releases
 
 ## Usage
 

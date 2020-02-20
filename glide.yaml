@@ -1,3 +1,3 @@
-package: github.com/tonglil/fluxflow
+package: github.com/DavideFauri/fluxflow
 import:
 - package: github.com/spf13/cobra

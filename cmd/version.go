@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/tonglil/fluxflow/versioning"
+	"github.com/DavideFauri/fluxflow/versioning"
 )
 
 // versionCmd represents the version command
